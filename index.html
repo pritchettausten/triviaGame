@@ -11,6 +11,8 @@
 		<div class="row head">
 			<h1>Total Trivial Trivia</h1>
 			<h4>Time Remaining: <span class="timer">30</span> Seconds</h4>
+			<div id="outOfTime"></div>
+			<img src="assets/images/sorry.png">
 		</div>
 		<div class="endStatus">
 			<p id="scoreState">You got <span class="score">__</span> correct! But you missed <span class="misses">__</span>...</p>
@@ -25,12 +27,12 @@
 					<div class="panel-heading">
 						<h4>Which is the world's largest reef?</h4>
 					</div>
-					<div class="panel-body">
+					<div class="panel-body winner1">
 						<form>
 							<span class="choices"><input type="radio" name="choice1" id="a1" value="0"> Tubbataha Reef - Philippines </span>
 							<span class="choices"><input type="radio" name="choice1" id="a2" value="0"> Amazon Reef - Brazil</span>
 							<span class="choices"><input type="radio" name="choice1" id="a3" value="0"> Apo Reef - Philippines</span>
-							<span class="choices"><input type="radio" name="choice1" id="a4" value="1"> <span class="winner"> Great Barrier Reef - Australia</span></span>
+							<span class="choices"><input type="radio" name="choice1" id="a4" value="1"> Great Barrier Reef - Australia</span>
 						</form>
 					</div>
 				</div>
@@ -40,10 +42,10 @@
 					<div class="panel-heading">
 						<h4>Which is the fastest fish in the ocean?</h4>
 					</div>
-					<div class="panel-body">
+					<div class="panel-body winner2">
 						<form>
 							<span class="choices"><input type="radio" name="choice2" id="b1" value="0"> Great White Shark </span>
-							<span class="choices"><input type="radio" name="choice2" id="b2" value="1"> <span class="winner1"> Sailfish </span></span>
+							<span class="choices"><input type="radio" name="choice2" id="b2" value="1"> Sailfish </span>
 							<span class="choices"><input type="radio" name="choice2" id="b3" value="0"> Barracuda </span>
 							<span class="choices"><input type="radio" name="choice2" id="b4" value="0"> Blue Fin Tuna </span>
 						</form>
@@ -55,9 +57,9 @@
 					<div class="panel-heading">
 						<h4>Which is the largest whale in the ocean?</h4>
 					</div>
-					<div class="panel-body">
+					<div class="panel-body winner3">
 						<form>
-							<span class="choices"><input type="radio" name="choice3" id="c1" value="1"> <span class="winner2">Blue Whale </span></span>
+							<span class="choices"><input type="radio" name="choice3" id="c1" value="1"> Blue Whale </span>
 							<span class="choices"><input type="radio" name="choice3" id="c2" value="0"> Sperm Whale </span>
 							<span class="choices"><input type="radio" name="choice3" id="c3" value="0"> Orca </span>
 							<span class="choices"><input type="radio" name="choice3" id="c4" value="0"> Humpback Whale </span>
@@ -70,11 +72,11 @@
 					<div class="panel-heading">
 						<h4>Which has the strongest bite on earth?</h4>
 					</div>
-					<div class="panel-body">
+					<div class="panel-body winner4">
 						<form>
 							<span class="choices"><input type="radio" name="choice4" id="d1" value="0"> Great White Shark </span>
 							<span class="choices"><input type="radio" name="choice4" id="d2" value="0"> Orca </span>
-							<span class="choices"><input type="radio" name="choice4" id="d3" value="1"> <span class="winner3"> Saltwater Crocodile </span></span>
+							<span class="choices"><input type="radio" name="choice4" id="d3" value="1"> Saltwater Crocodile</span>
 							<span class="choices"><input type="radio" name="choice4" id="d4" value="0"> Your grandma's Chihuahua </span>
 						</form>
 					</div>
@@ -85,9 +87,9 @@
 					<div class="panel-heading">
 						<h4>How much of the oceans have been explored by humans</h4>
 					</div>
-					<div class="panel-body">
+					<div class="panel-body winner5">
 						<form>
-							<span class="choices"><input type="radio" name="choice5" id="e1" value="1"> <span class="winner4">Less than 10% </span></span>
+							<span class="choices"><input type="radio" name="choice5" id="e1" value="1"> Less than 10% </span>
 							<span class="choices"><input type="radio" name="choice5" id="e2" value="0"> 20 - 40% </span>
 							<span class="choices"><input type="radio" name="choice5" id="e3" value="0"> 40 - 60% </span>
 							<span class="choices"><input type="radio" name="choice5" id="e4" value="0"> 60 - 80% </span>

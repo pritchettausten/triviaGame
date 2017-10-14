@@ -2,6 +2,7 @@ $(document).ready(function() {
 
 	$(".hiden").hide();
 	$(".endStatus").hide();
+	$("img").hide();
 
 	var result = [];
 	var allChecked = [];
@@ -12,7 +13,7 @@ $(document).ready(function() {
 
 	$("submit").on("click", stop);
 
-	$("#submit").one("click", function(){
+	$("#submit").on("click", function(){
 		allCheck = $('input[type="radio"]:checked')
 		result = $('input[value="1"]:checked');
 			if (allCheck.length < 5) {
@@ -86,19 +87,27 @@ function decrement() {
 		if(countDown === 0) {
 			stop();
 			alert("Times Up!")
+			clear();
 		}
 };
 
 function bold() {
-	$(".winner").html("<b>Great Barrier Reef - Australia</b>");
-	$(".winner1").html("<b>Sailfish</b>");
-	$(".winner2").html("<b>Blue Whale</b>");
-	$(".winner3").html("<b>Saltwater Crocodile</b>");
-	$(".winner4").html("<b>Less than 10%</b>");
+	$(".winner1").html("<i>The Great Barrier Reef in Australia</i>");
+	$(".winner2").html("<i>The Sailfish</i>");
+	$(".winner3").html("<i>The Blue Whale</i>");
+	$(".winner4").html("<i>The Saltwater Crocodile</i>");
+	$(".winner5").html("<i>Humans have explored less than 10% of the ocean.</i>");
 };
 function stop() {
 	clearInterval(intervalId);
+	$("#submit").hide();
 };
+
+function clear() {
+	$(".hiden").hide();
+	$("img").show();
+	$("#outOfTime").text("You either answer all, or none. Sorry, friend.")
+}
 
 run();
 

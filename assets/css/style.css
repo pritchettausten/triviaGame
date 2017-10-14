@@ -1,0 +1,28 @@
+body {
+	background: url(../images/stardust.png);
+	text-align: center;
+	letter-spacing: 1px;
+}
+h1 {
+	font-size: 60px;
+}
+#startH4, 
+.head {
+	color: white;
+}
+
+.choices {
+	margin-right: 25px;
+	margin-left: 25px;
+	
+}
+#scoreState {
+	font-size: 30px;
+	color: white;
+}
+b {
+	background: green;
+	padding: 3px;
+	color: white;
+}
+
